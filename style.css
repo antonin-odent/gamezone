@@ -1,0 +1,207 @@
+/* ==========================================================
+   GameZone — style du formulaire d'inscription
+   ========================================================== */
+
+:root {
+  --nuit: #16122b;
+  --panneau: #221c42;
+  --bordure: #3a3170;
+  --violet: #4b3fa8;
+  --texte: #edeaff;
+  --texte-doux: #a9a2d8;
+  --jaune: #ffc933;
+
+  --police-titre: "Bungee", Impact, "Arial Black", sans-serif;
+  --police-texte: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+/* ---------- Page ---------- */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+  background-color: var(--nuit);
+  background-image: radial-gradient(rgba(120, 105, 220, 0.28) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--texte);
+  font-family: var(--police-texte);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+/* ---------- Carte ---------- */
+
+.carte {
+  width: 100%;
+  max-width: 480px;
+  padding: 32px 28px 28px;
+  background: var(--panneau);
+  border: 2px solid var(--bordure);
+  border-radius: 8px;
+  box-shadow: 10px 10px 0 var(--violet);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--police-titre);
+  font-size: clamp(2rem, 9vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--jaune);
+  text-shadow: 3px 3px 0 var(--violet);
+}
+
+.sous-titre {
+  margin: 10px 0 28px;
+  color: var(--texte-doux);
+}
+
+/* ---------- Champs ---------- */
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+/* Nom + Prénom côte à côte */
+.duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  font: inherit;
+  color: var(--texte);
+  background-color: var(--nuit);
+  border: 2px solid var(--bordure);
+  border-radius: 6px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input::placeholder {
+  color: #8e86c4;
+}
+
+input:hover,
+select:hover {
+  border-color: #5a4fc0;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--jaune);
+  box-shadow: 0 0 0 3px rgba(255, 201, 51, 0.25);
+}
+
+/* Liste déroulante avec flèche personnalisée */
+select {
+  appearance: none;
+  padding-right: 42px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1.5l6 6 6-6' fill='none' stroke='%23ffc933' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+option {
+  background-color: var(--nuit);
+  color: var(--texte);
+}
+
+/* ---------- Bouton ---------- */
+
+.bouton {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 20px;
+  font-family: var(--police-titre);
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  color: var(--nuit);
+  background: var(--jaune);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 4px 4px 0 var(--violet);
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.bouton:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 var(--violet);
+}
+
+.bouton:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--violet);
+}
+
+.bouton:focus-visible {
+  outline: 3px solid var(--texte);
+  outline-offset: 3px;
+}
+
+/* ---------- Lien ---------- */
+
+.lien {
+  display: block;
+  margin-top: 22px;
+  text-align: center;
+  color: var(--texte-doux);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.lien:hover,
+.lien:focus-visible {
+  color: var(--jaune);
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 480px) {
+  .carte {
+    padding: 24px 20px 22px;
+    box-shadow: 6px 6px 0 var(--violet);
+  }
+
+  .duo {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Mouvement réduit ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  input,
+  select,
+  .bouton {
+    transition: none;
+  }
+}
