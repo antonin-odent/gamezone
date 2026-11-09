@@ -59,8 +59,8 @@ $stmt = mysqli_prepare($connexion, $sql);
 mysqli_stmt_bind_param($stmt, "iss", $joueur_id, $token, $expiration);
 mysqli_stmt_execute($stmt);
 
-$lien= "https://www.siolapie.com/27_ODENT/gamezone/reinitialisation.php?token=" . urlencode($token);
-//$lien= "http://localhost/gamezone/reinitialisation.php?token=" . urlencode($token);
+//$lien= "https://www.siolapie.com/27_ODENT/gamezone/reinitialisation.php?token=" . urlencode($token);
+$lien= "http://localhost/gamezone/reinitialisation.php?token=" . urlencode($token);
 
 // Préparer l'email
 $objet = "Réinitialisation de votre mot de passe";
