@@ -45,7 +45,7 @@ $tournois = mysqli_fetch_all($resultat, MYSQLI_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon profil</title>
     <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="profil.css?v2">
 </head>
 <body class="page-profil">
   <main class="carte carte--large">

@@ -18,7 +18,11 @@
 
 /* ---------- Page ---------- */
 
-
+body.page-profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* Carte plus large que celle du formulaire d'inscription */
 .carte--large {
