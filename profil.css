@@ -18,9 +18,7 @@
 
 /* ---------- Page ---------- */
 
-body.page-profil {
-  place-items: start center;
-}
+
 
 /* Carte plus large que celle du formulaire d'inscription */
 .carte--large {
