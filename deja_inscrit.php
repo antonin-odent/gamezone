@@ -22,7 +22,7 @@ $tournoi = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt));
 <head>
     <meta charset="UTF-8">
     <title>Déjà inscrit</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 

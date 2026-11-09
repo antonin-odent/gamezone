@@ -41,7 +41,7 @@ if (!$tournoi) {
 <head>
     <meta charset="UTF-8">
     <title><?= htmlspecialchars($tournoi["nom"]) ?></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 

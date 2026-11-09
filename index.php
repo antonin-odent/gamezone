@@ -1,4 +1,5 @@
 <?php
+ 
 session_start();
 include("conf.php");
 $connexion = mysqli_connect($serveur, $user, $mdp, $nombdd);
@@ -9,8 +10,8 @@ $resultat = mysqli_query($connexion, "SELECT * FROM ap3_jeu");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameZoneaaaaaaa</title>
-    <link rel="stylesheet" href="style.css">
+    <title>GameZone</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 <?php include("menu.php"); ?>

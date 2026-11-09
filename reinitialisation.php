@@ -57,7 +57,7 @@ if (!isset($_GET["token"])) {
 <head>
     <meta charset="UTF-8">
     <title>Réinitialisation du mot de passe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 

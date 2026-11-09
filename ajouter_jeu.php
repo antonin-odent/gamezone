@@ -18,7 +18,7 @@ if (!isset($_SESSION["id"]) || $_SESSION["type"] != 1) {
 <head>
     <meta charset="UTF-8">
     <title>Ajouter un jeu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <h1>Ajouter un jeu</h1>

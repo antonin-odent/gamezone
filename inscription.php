@@ -11,7 +11,7 @@ $resultat = mysqli_query($connexion, "SELECT * FROM ap3_jeu");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>GameZone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <h2>Inscription des joueurs</h2>

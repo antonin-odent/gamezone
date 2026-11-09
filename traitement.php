@@ -31,7 +31,7 @@ envoiMail($email, $objet, $message);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><title>GameZone</title><link rel="stylesheet" href="style.css"></head>
+<head><meta charset="UTF-8"><title>GameZone</title><link rel="stylesheet" href="style1.css"></head>
 <body>
 <?php include("menu.php"); ?>
 <h1>Inscription réussie</h1>

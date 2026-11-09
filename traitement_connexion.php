@@ -18,3 +18,5 @@ if ($joueur && password_verify($_POST["mdp"], $joueur["mdp"])) {
     header("Location: index.php?erreur=1");
 }
 exit;
+
+

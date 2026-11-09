@@ -27,3 +27,6 @@ mysqli_stmt_execute($stmt);
 header("Location: admin_tournoi.php?id=" . $tournoi_id);
 exit;
 ?>
+
+
+

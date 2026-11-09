@@ -13,7 +13,7 @@ $resultat = mysqli_query($connexion, $requete);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><title>GameZone</title><link rel="stylesheet" href="style.css"></head>
+<head><meta charset="UTF-8"><title>GameZone</title><link rel="stylesheet" href="style1.css"></head>
 <body>
 <?php include("menu.php"); ?>
 <h1>Liste des joueurs inscrits</h1>

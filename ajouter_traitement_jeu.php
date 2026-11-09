@@ -4,6 +4,8 @@ require("mailer.php");
 include("conf.php");
 $connexion = mysqli_connect($serveur, $user, $mdp, $nombdd);
 
+
+
 $nom    = $_POST['nom'];
 $description = $_POST['description'];
 $logo  = $_FILES['logo'];

@@ -17,3 +17,6 @@ mysqli_stmt_execute($stmt);
 
 echo "Inscription supprimée.";
 ?>
+
+
+

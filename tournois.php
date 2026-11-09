@@ -20,7 +20,7 @@ $result = mysqli_query($connexion,$sql);
 <head>
     <meta charset="UTF-8">
     <title>Tournois</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 

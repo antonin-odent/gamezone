@@ -77,3 +77,5 @@ if (mysqli_stmt_execute($stmt)) {
     echo "Erreur lors de l'inscription.";
 }
 ?>
+
+

@@ -10,7 +10,7 @@ include("conf.php");
 <head>
     <meta charset="UTF-8">
     <title>Inscription confirmée</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 
