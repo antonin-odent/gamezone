@@ -14,5 +14,5 @@ $tournoi = (int) $_POST["tournoi_id"];
 
 mysqli_query($connexion, "DELETE FROM ap3_inscrire WHERE joueur_id=$joueur AND tournoi_id=$tournoi");
 
-header("Location: mon_profil.php");
+header("Location: tournois.php");
 exit;
