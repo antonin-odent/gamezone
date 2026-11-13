@@ -14,7 +14,7 @@
     <input id="email" name="email" type="email" required>
     <button type="submit">Réinitialiser</button>
 </form>
-    <p><a href="connexion.php">Retour à la page de connexion</a></p>
+    <p><a href="index.php">Retour à la page de connexion</a></p>
 </body>
 </html>
 
