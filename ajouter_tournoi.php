@@ -74,5 +74,7 @@ $jeux = mysqli_query($connexion, "SELECT * FROM ap3_jeu");
 
 </form>
 
+<p><a href="tournois.php">Retour à la liste des tournois</a></p>
+
 </body>
 </html>
