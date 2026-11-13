@@ -8,6 +8,7 @@
     
 </head>
 <body>
+    <p>Veuillez entrer votre adresse email pour réinitialiser votre mot de passe.</p>
     <form action="mdp.php" method="POST">
     <label for="email">Email</label>
     <input id="email" name="email" type="email" required>
